@@ -1,5 +1,5 @@
 ---
-name: Report a bug
+name: 🐛 Report a bug
 about: Something Game Doctor is not working as expected
 title: ''
 labels: 'type:bug'
