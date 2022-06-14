@@ -1,7 +1,7 @@
 name: 🩺 Request a feature
 description: Report a missing feature
 title: "[Feature Request]:"
-labels: ["feature request", "triage"]
+labels: ["feature-request", "triage"]
 assignees:
   - homapf
 body:
