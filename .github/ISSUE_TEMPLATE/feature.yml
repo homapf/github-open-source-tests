@@ -14,8 +14,8 @@ body:
     attributes:
       label: Why?
       description: Why should this feature exist? What are the use-cases?
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: implementation
     attributes:
