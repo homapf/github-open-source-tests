@@ -1,29 +1,48 @@
----
-name: 🐛 Report a bug
-about: Something Game Doctor is not working as expected
-title: ''
-labels: 'type:bug'
-assignees: ''
----
-
-#### System information
-
-- Unity version: 2020.3.21f1
-- OS & Version: Windows/Linux/OSX
-
-#### Expected behaviour
-
-
-#### Actual behaviour
-
-
-#### Steps to reproduce the behaviour
-
-
-#### Logs
-
-````
-[Logs here]
-````
-
-When submitting logs: please submit them as text and not screenshots.
+name: 🐛 Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - homapf
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity Version
+      description: What version of Unity are you using?
+    validations:
+      required: true
+  - type: input
+    id: game-doctor-version
+    attributes:
+      label: Game Doctor Version
+      description: What version of Game Doctor are you using?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
