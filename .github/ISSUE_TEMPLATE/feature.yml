@@ -13,13 +13,11 @@ body:
     id: rationale
     attributes:
       label: Why?
-      description: Why should this feature exist?
-                   What are the use-cases?
+      description: Why should this feature exist? What are the use-cases?
       validations:
         required: true
   - type: textarea
     id: implementation
     attributes:
       label: Implementation
-      description: Do you have ideas regarding the implementation of this feature?
-Are you willing to implement this feature?
+      description: Do you have ideas regarding the implementation of this feature? Are you willing to implement this feature?
